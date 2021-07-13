@@ -1,0 +1,67 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slides {
+  width: 80rem;
+  margin: auto;
+  height: 70vh;
+  position: relative;
+}
+
+.slides-btn .fas {
+  display: block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 3rem;
+  color: #fff;
+  z-index: 100;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.slides-btn .fas:hover {
+  background-color: black;
+}
+
+.slides-btn .fa-angle-right {
+  right: 0;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+}
+
+.slide-text-page {
+  position: absolute;
+  top: 0;
+  color: #fff;
+}
+
+.slide-text-caption {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
+}
+
+.active {
+  z-index: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+/*# sourceMappingURL=styles.css.map */
