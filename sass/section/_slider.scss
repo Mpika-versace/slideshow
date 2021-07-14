@@ -1,0 +1,50 @@
+.slider{
+    text-align: center;
+    &-container{
+        width: 80%;
+        margin: auto;
+        &-content{
+            @include relative;
+            width: 100%;
+            overflow: hidden
+        }
+    }
+    &-flex{
+        @include flexbox;
+        &-content{
+            @include flex;
+            @include relative;
+            transform: translateX(0px);
+            &-caption{
+                @include absolute($top:50%,$left:50%);
+                @include translate(-50%,-50%);
+                
+            }
+        }
+    }
+    &-btn{
+        .fas,.far{
+            @include absolute($top:50%);
+            @include translate($y:-50%);
+            display: inline-block;
+            font-size: 4rem;
+            padding: 1rem;
+            color: $white;
+            cursor: pointer;
+            
+            &:hover{
+                background-color: rgba($color: #000000, $alpha: .6);
+            }
+        }
+        .fa-angle-left{
+            left: 0;
+        }
+        .fa-angle-right{
+            right: 0;
+        }
+        .far{
+            @include absolute($top:80%);
+            @include round;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@mixin translate($x:null,$y:null) {
+    @if $x==null {
+        transform: translateY($y); 
+    }
+    @else if $y==null{
+        transform: translateX($x); 
+    }
+    @else{transform: translate($x,$y)};
+}
+
+@mixin scale($x:null,$y:null) {
+    @if $x==null {
+        transform: scaleY($y); 
+    }
+    @else if $y==null{
+        transform: scaleX($x); 
+    }
+    @else{transform: scale($x,$y)};
+}
+
